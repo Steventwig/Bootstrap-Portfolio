@@ -12,14 +12,16 @@ body{
 .navbar-brand {
     color: #f4f4f4;
     cursor: pointer;
+    padding: 8px;
 }
 
 .nav-link {
     margin-right: 1em !important;
 }
 
-.nav-link:hover {
-    color: #007bff;
+.nav-link:hover, .navbar-brand:hover {
+    color: #343a40;
+    background-color: #fff;
 }
 
 .navbar-collapse {
@@ -104,24 +106,24 @@ body{
     margin: 80px;
    }
    .about img{
-    height: 100%;
-       width: 100%;
-       border-radius: 50%
+
+    width: 80%;
+       border-radius: 100%
+    
    }
    .about span{
     display: block;
     color: #888;
-    position: absolute;
-    left: 115px;
+
    }
-   .about .desc{
-    padding: 2em;
+   .about .style-line{
+    padding: 0 40px;
     border-left:4px solid black;
    }
    .about .desc h3{
     color: black;
    }
-   .about .desc p{
+   .about .style-line p{
     line-height:2;
     color: #888;
    }
@@ -131,6 +133,8 @@ body{
 .portfolio{
     margin-bottom: 100px;
     position: relative;	
+    background-color: #fff;
+    padding: 100px;
 }
 .portfolio h1{
     color: #888;	
@@ -138,7 +142,6 @@ body{
     margin-top: 0;
 }
 .portfolio img{
-     height: 200px;
      margin: 20px;
 }
    /* ---------------------------------------------------------------------------------------------- */
