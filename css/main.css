@@ -4,9 +4,9 @@ body{
     font-family: 'Amiri', serif;
 }
 /* ---------------------------------------------------------------------------------------------- */
-.navbar {
+/* .navbar {
     background: #343a40;
-}
+} */
 
 .nav-link,
 .navbar-brand {
@@ -20,8 +20,8 @@ body{
 }
 
 .nav-link:hover, .navbar-brand:hover {
-    color: #343a40;
-    background-color: #fff;
+    color: #fff !important;
+    background-color: grey;
 }
 
 .navbar-collapse {
@@ -33,9 +33,9 @@ body{
     justify-content: flex-end;
 }
 
-.bg-dark {
+/* .bg-dark {
     background-color: #343a40 !important
-}
+} */
 /* ---------------------------------------------------------------------------------------------- */
 
 /* why did this not work ? */
@@ -89,9 +89,9 @@ body{
  background:#343a40;
  color:#fff;
 }
-.info-page button:hover{
-        color: #007bff;
-   }
+/* .info-page button:hover{
+        color: #888;
+   } */
 /* ---------------------------------------------------------------------------------------------- */
    .about{
     margin-bottom: 100px;
@@ -166,7 +166,7 @@ body{
 }
 
 submit:hover{
-    color: #007bff;
+    color: #888;
 }
 
    /* ---------------------------------------------------------------------------------------------- */
