@@ -28,9 +28,6 @@ body{
     justify-content: flex-end;
 }
 
-.navbar-toggler {
-    background: #fff !important;
-}
 
 .navbar-collapse {
     justify-content: flex-end;
