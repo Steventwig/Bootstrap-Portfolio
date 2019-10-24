@@ -10,35 +10,48 @@
     <title>Bootstrap Portfolio</title>
 </head>
 <body>
-<!-- NavBar -->
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top ">
-    <a class="navbar-brand" data-value="home" href="#">Steven Terwilliger</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Top But-->
+
+<button id="con-btn" title="Contact Me" data-toggle="modal" data-target="#contact" >Contact Me</button>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" >Top</button>
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+    <a class="navbar-brand" href="http://syntaxflow.com/">
+        <img src="images/logo.png" width="30" height="30" alt="" style="border: 1px solid #2F4F4F; padding: 2px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-4">
+
             <li class="nav-item">
-                <a class="nav-link" data-value="about" href="#">About</a></li>
-            <li class="nav-item">
-                <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>
+                <a class="nav-link nav-link nav-link-ltr" data-value="about" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " data-value="contact" href="#">Contact</a></li>
+                <a class="nav-link nav-link nav-link-ltr" data-value="portfolio" href="#">Portfolio</a>
+            </li>
         </ul>
+
     </div>
 </nav>
-<header class="header" id="home">
+
+<!-- header -->
+<header class="header ">
     <div class="overlay"></div>
-    <div class="info-page">
-        <h1>This Is My Bootstrap HomeWork Page... Please Enjoy!</h1>
-        <p>I am not sure if I competed this assignment the way it was intended . However the instructions did not
-            specify "do not CREATE .js AND .css files" and I am perhaps, not skilled enough yet to do it without them.
-            While it is not a perfected product I believe it shows effort!</p>
-        <button class="btn btn-dark">bootstrap!</button>
-        </h1>
+    <div class="container">
+        <div class="description ">
+            <h1>
+                Hello ,Welcome To My World
+                <hr>
+                <p>“We do not need magic to change the world, we carry all the power we need inside ourselves already: we have the power to imagine better.” - J.K. Rowling</p>
+            </h1>
+        </div>
     </div>
+
 </header>
 
 <!-- about section -->
@@ -46,97 +59,99 @@
     <div class="container">
         <h1 class="text-center">About Me</h1>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-                <img src="Images/profile.jpg" class="img-fluid">
-                <span>Developer In Training</span>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/profile.jpg" class="img-fluid">
+                <span class="text-justify">Web Developer</span>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 style-line">
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
 
                 <h3>Steven Terwilliger</h3>
                 <p>
-                    The result of this project is a culmination of my OCD kicking in, getting over-excited and a general
-                    lack of attention to detail. When I initially sat down and looked at the homework assignment I did
-                    not pay close enough attention to the intent of the project. Looking back I understand that the goal
-                    of the project was to do most if not all of my styling in bootstrap. However in the moment I was so
-                    fixated on creating a bootstrap portfolio and getting the most out of my styling in the best way I
-                    knew how. Only having a week of experience with bootstrap, my confidence level producing the same
-                    product via only styling in bootstrap was simply not there. This all resulted in an additional CSS
-                    sheet and JS sheet, which I don't technically think was allowed. Please advise if the basic
-                    parameters of the assignment were not met and I will do my best to fix the subject matter ASAP.
+                    Solution oriented and highly motivated computer technician with years of technical troubleshooting experience. Takes
+                    pride in providing creative solutions and out of the box thinking. Enjoys complex, multi-faceted assignments where pulling
+                    together a collaborative pool of skills is essential to solve complicated technical issues. Fosters a lively and professional
+                    work environment and values commitment to excellence, innovation, and customer service.
+                    <br>
+                <hr>
+                    PROFESSIONAL EDUCATION
+                <br>
+                    ● IT Fundamentals Course
+                    ● Cyber Systems Operations Apprentice
+                    ● CompTIA Security+ Certification; 2016
+                    ● Fiber Optic Termination Course
+                    ● UCD Full Stack Web Development Certification Course
                 </p>
+
             </div>
         </div>
     </div>
 </div>
-</div>
+
 <!-- portfolio -->
-<div class="container">
-    <div class="row">
-        <div class="span4">
-            <div class="well"><a href="https://steventwig.github.io/Psychic-Game/"><img src="Images/game-over.gif"></a>
+<div class="portfolio" id="portfolio">
+    <h1 class="text-center">Portfolio</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <a href="https://steventwig.github.io/Psychic-Game/"><img src="images/game-over.gif" class="img-fluid"></a>
             </div>
-        </div>
-        <div class="span4">
-            <div class="well"><a href="https://github.com/Steventwig/Bamazon"><img src="Images/Bamazon.gif"></a></div>
-        </div>
-        <div class="span4">
-            <div class="well"><img src="Images/pic9.jpg"></div>
-        </div>
-        <div class="span4">
-            <div class="well"><img src="Images/pic9.jpg"></div>
-        </div>
-        <div class="span4">
-            <div class="well"><img src="Images/pic9.jpg"></div>
-        </div>
-        <div class="span4">
-            <div class="well"><img src="Images/pic9.jpg"></div>
-        </div>
-        <div class="span4">
-            <div class="well"><img src="Images/pic9.jpg"></div>
-        </div>
-        <div class="span4">
-            <div class="well"><img src="Images/pic9.jpg"></div>
-        </div>
-        <div class="span4">
-            <div class="well"><img src="Images/pic9.jpg"></div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <a href="https://github.com/Steventwig/Bamazon"><img src="images/Bamazon.gif"  class="img-fluid"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/pic1.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/pic2.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/pic3.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/pic4.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/pic5.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/pic6.jpg" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="images/pic7.jpg" class="img-fluid">
+            </div>
         </div>
     </div>
 </div>
+
 
 <!-- Contact form -->
-<div class="contact-form" id="contact">
-    <div class="container">
-        <form>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h1>Get in Touch</h1>
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <form>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 right">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+                        </div>
+                        <div class="form-group">
+				   	 <textarea class="form-control form-control-lg">
+				   	 </textarea>
+                        </div>
+                        <input type="submit" class="btn btn-secondary btn-block" id="submit" value="Send" name="">
+                    </div>
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 right">
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com"
-                               name="email">
-                    </div>
-                    <div class="form-group">
-                                    <textarea class="form-control form-control-lg">
-                                    
-                                    </textarea>
-                    </div>
-                    <input type="submit" class="btn btn-secondary btn-block" id="submit" value="Send" name="">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">footer yay!</span>
-    </div>
-</footer>
 
-
+<!-- add Javasscript file from js file -->
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -146,5 +161,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/Scroll%20Top%20Btn.js"></script>
 </body>
 </html>

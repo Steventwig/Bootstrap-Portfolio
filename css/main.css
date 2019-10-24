@@ -1,190 +1,176 @@
-
 body{
-    background-color: #343a40;
+    background: rgb(115,121,129);
+    background: radial-gradient(circle, rgba(115,121,129,1) 0%, rgba(0,0,0,1) 80%);
     font-family: 'Amiri', serif;
 }
-/* ---------------------------------------------------------------------------------------------- */
-
-img {
-    padding: 20px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+html,h1,h2,h3,h4,h5,h6,a{
+    overflow-x: hidden;
+    font-family: "Raleway", serif;
 }
-
-/* .navbar {
-    background: #343a40;
-} */
-
-.nav-link,
-.navbar-brand {
+.navbar{
+    transition: top 0.3s;
+    background: rgb(115,121,129);
+    background: radial-gradient(circle, rgba(115,121,129,1) 0%, rgba(0,0,0,1) 80%);
+}
+.nav-link , .navbar-brand{
     color: #f4f4f4;
     cursor: pointer;
-    padding: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
 }
-
-.nav-link {
+.nav-link{
     margin-right: 1em !important;
 }
-
-.nav-link:hover, .navbar-brand:hover {
-    color: #fff !important;
-    background-color: grey;
+.nav-link:hover {
+    opacity: 1;
+    color: #2F4F4F !important;
 }
-
-.navbar-collapse {
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+}
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+.navbar-collapse{
     justify-content: flex-end;
 }
-
-
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-/* .bg-dark {
-    background-color: #343a40 !important
-} */
-/* ---------------------------------------------------------------------------------------------- */
-
-/* why did this not work ? */
-/* .header{
-    background-image: url('../Images/bg.jpeg');
-    background-attachment: fixed;
+.header{
+    position: relative;
+    background-image: url('../images/bg.jpeg');
+    height: 100vh !important;
     background-size: cover;
     background-position: center;
-   } */
-/* ---------------------------------------------------------------------------------------------- */
-.header {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('../Images/bg.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
-/* ---------------------------------------------------------------------------------------------- */
 .overlay{
-    opacity: .8;
     position: absolute;
     min-height: 100%;
     min-width: 100%;
     left: 0;
     top: 0;
     background: rgba(244, 244, 244, 0.79);
-   }
-/* ---------------------------------------------------------------------------------------------- */
-.info-page{
-    text-align: center
+    background: radial-gradient(circle, rgba(115,121,129,.8) 0%, rgba(0,0,0,.8) 80%);
 }
-.info-page{
+.description{
     position: absolute;
     top: 30%;
     margin: auto;
     padding: 2em;
-    
 }
-.info-page h1{
- color:#343a40 ;
+.description h1{
+    color:#fff !important;
 }
-.info-page p{
- color:#343a40;
- font-size: 20px;
- width: 100%;
- line-height: 1.5;
+.description p{
+    color:#fff !important;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
 }
-.info-page button{
- border:1px  solid #343a40;
- background:#343a40;
- color:#fff;
+.description button{
+    border:1px  solid #2F4F4F;
+    background:  #2F4F4F;
+    color:#fff !important;
 }
-/* .info-page button:hover{
-        color: #888;
-   } */
-/* ---------------------------------------------------------------------------------------------- */
-   .about{
-    margin-bottom: 100px;
-    padding: 100px;
+.about{
+    margin: 4em 0;
+    padding: 1em;
     position: relative;
-   }
-   .about h1{
-    color: #888;
-    margin-bottom: 80px;
-   }
-   .about img{
-
-    width: 80%;
-       border-radius: 100%
-    
-   }
-   .about span{
+}
+.about h1{
+    color:#fff !important;
+    margin: 2em;
+}
+.about img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+.about span{
     display: block;
     color: #888;
-   }
-   .about .style-line{
-    padding: 0 40px;
-    border-left:4px solid black;
-   }
-   .about .desc h3{
-    color: black;
-   }
-   .about .style-line p{
+    position: absolute;
+    left: 115px;
+}
+.about .desc{
+    padding: 2em;
+    border-left:4px solid #2F4F4F;
+}
+.about .desc h3{
+    color:#ffffff;
+}
+.about .desc p{
     line-height:2;
-    color: #888;
-   }
-
-   /* ---------------------------------------------------------------------------------------------- */
-
+    color:#ffffff;
+}
 .portfolio{
-    margin-bottom: 100px;
-    position: relative;	
-    background-color: #fff;
-    padding: 100px;
+    margin: 4em 0;
+    position: relative;
 }
 .portfolio h1{
-    color: #888;	
-    margin-bottom: 80px;
-    margin-top: 0;
+    color:#fff !important;
+    margin: 2em;
 }
 .portfolio img{
-     margin: 20px;
-}
-   /* ---------------------------------------------------------------------------------------------- */
-
-.contact-form{
-    margin-top: 300px;
-    margin-bottom: 300px;
-	position: relative;		
-}
-
-.contact-form h1{
-	padding:2em 1px;
-	color: #888; 
-}
-.contact-form .right{
-	max-width: 600px;
-}
-.contact-form .right .btn-secondary{
-	background:  #888;
-	color: #fff;
-	border:0;
-}
-.contact-form .right .form-control::placeholder{
-	color: #888;
-	font-size: 16px;
-}
-
-submit:hover{
-    color: #888;
-}
-
-   /* ---------------------------------------------------------------------------------------------- */
-
-   .footer {
-    text-align: center;
-    position: sticky;
-    bottom: 0;
+    height: 15rem;
     width: 100%;
-    height: 60px; 
-    line-height: 60px; 
-    background-color: #343a40;
-  }
+    margin-bottom: 1em;
+}
+.modal-content{
+border: none !important;
+background: unset !important;
+}
+#submit{
+    border:1px  solid #2F4F4F;
+    background:  #2F4F4F;
+    color: #fff;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background:  #2F4F4F;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+#con-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background:  #2F4F4F;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+#con-btn:hover {
+    background-color: #555;
+}
